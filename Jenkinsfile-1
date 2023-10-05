@@ -1,11 +1,11 @@
 pipeline {
   agent {
- node { label 'node18-alpine'} 
+ node { label 'agent-alpine'} 
 }
   stages {
     stage('Test') {
       steps {
-        sh 'node --version'
+        sh 'echo "hello"'
       }
     }
   }
