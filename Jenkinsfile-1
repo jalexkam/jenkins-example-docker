@@ -1,6 +1,6 @@
 pipeline {
   agent {
- node { label 'jenkins-agent-phyton'} 
+ node { label 'my-jenkins-agent-alpine'} 
 }
   stages {
     stage('Test') {
